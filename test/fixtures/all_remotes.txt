@@ -1,0 +1,3 @@
+irsend: seiki
+irsend: Panasonic_Viera-42PZ700U
+irsend: Panasonic_TC-21E1R
