@@ -4,6 +4,5 @@ class RemotesController < ApplicationController
   end
 	def show
 		@remote = Remote.new(params[:id])
-		@remote.load_keys
 	end
 end
