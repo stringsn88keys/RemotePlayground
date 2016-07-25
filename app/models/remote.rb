@@ -1,5 +1,5 @@
 class Remote
-  attr_reader :remote_name
+  attr_reader :name
 
   def self.all
     @remotes = remotes_list_command.each_line.map { |x| Remote.new(x.split(/ +/)[1].chomp) }
@@ -14,7 +14,7 @@ class Remote
   end
 
   def keys
-    @keys ||= remotes_list_keys_command.each_line.map { |k| Key.new(k.split(/ +/)[2].chomp) }
+    @keys ||= remotes_list_keys_command.each_line.map { |k| Key.new(self, k.split(/ +/)[2].chomp) }
   end
 
   def to_s
