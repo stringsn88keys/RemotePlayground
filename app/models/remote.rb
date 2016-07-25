@@ -14,7 +14,7 @@ class Remote
   end
 
   def keys
-    @keys ||= remotes_list_keys_command.each_line.map { |k| k.split(/ +/)[2].chomp }
+    @keys ||= remotes_list_keys_command.each_line.map { |k| Key.new(k.split(/ +/)[2].chomp) }
   end
 
   def to_s
