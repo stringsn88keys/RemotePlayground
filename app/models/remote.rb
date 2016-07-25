@@ -30,6 +30,6 @@ class Remote
   end
 
   def remotes_list_keys_command
-    `irsend LIST #{remote_name} "" 2>&1`
+    `irsend LIST #{name} "" 2>&1`
   end
 end 
