@@ -10,7 +10,7 @@ class Remote
   end
 
   def initialize(remote_name)
-    @remote_name = remote_name
+    @name = remote_name
   end
 
   def keys
