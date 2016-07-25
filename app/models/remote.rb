@@ -18,7 +18,7 @@ class Remote
   end
 
   def to_s
-    remote_name
+    name
   end
 
   def to_partial_path
